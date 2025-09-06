@@ -83,7 +83,7 @@ class _TodoPageState extends State<TodoPage> {
             subtitle: Text(task.description),
             trailing: IconButton(
               icon: const Icon(Icons.delete),
-              onPressed: () => taskProvider.removeTask(index as String),
+              onPressed: () => taskProvider.removeTask(task.id),
             ),
           );
         },
